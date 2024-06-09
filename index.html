@@ -17,131 +17,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        :root {
-            --Soft-Red: hsl(0, 94%, 66%);
-            --Soft-Blue: hsl(231, 69%, 60%);
-        }
-
-        body {
-            font-family: 'Rubik', sans-serif !important;
-        }
-
-        .navbar-toggler {
-            border: none;
-        }
-
-        .bg-active {
-            background: rgba(37, 43, 70, 0.94);
-            backdrop-filter: blur(5px);
-        }
-
-        .btn-login {
-            outline: none;
-            padding: 5px 35px;
-            border: 1px solid var(--Soft-Red);
-            background-color: var(--Soft-Red);
-            color: white;
-            border-radius: 7px;
-            transition: 0.6s;
-        }
-        .button{
-            outline: none;
-            padding: 10px 25px;
-            border: 1px solid #434343;           
-            border-radius: 3px;
-            transition: 0.6s;
-            font-size: 18px;
-        }
-        .btn-login:hover {
-            background-color: transparent !important;
-            color: var(--Soft-Red);
-        }
-
-        .nav-link:hover {
-            color: var(--Soft-Red) !important;
-        }
-
-        .hero--image {
-            position: relative;
-        }
-
-        .figure {
-            position: absolute;
-            width: 80%;
-            height: 80%;
-            background-color: var(--Soft-Blue);
-            right: 0;
-            border-radius: 0 0 0 30%;
-            bottom: 0;
-            z-index: -999;
-        }
-
-        .hero--text {
-            width: 40% !important;
-        }
-
-        .hero--text h1 {
-            color: #434343;
-            font-size: 40px;
-            font-weight: 500;
-        }
-
-        .hero--text p {
-            color: #434343;
-            font-size: 18px;
-            font-weight: 500;
-        }
-        .btn-chrome{
-            background-color: var(--Soft-Blue);
-            color: white;
-            border: 1px solid var(--Soft-Blue);
-        }
-        .btn-chrome:hover{
-            background-color: white;
-            color: var(--Soft-Blue);
-        }
-
-        .btn-fox{
-            background-color: #f2f2f2!important;
-            border: 1px solid #434343;
-            color: #434343;
-        }
-        .btn-fox:hover{
-            background-color: white;
-        }
-
-        @media only screen and (max-width: 990px) {
-
-            .offcanvas-body .nav-item {
-                width: 100% !important;
-                border-top: 1px solid #fff;
-                padding: 35px 0;
-            }
-
-            .offcanvas-body .nav-link {
-                color: #fff !important;
-            }
-
-            .navbar-nav {
-                gap: 0 !important;
-            }
-
-            .btn-login {
-                width: 100%;
-                padding: 15px 25px !important;
-                border-color: white;
-                background-color: transparent;
-            }
-
-            .hero--text {
-                width: 100% !important;
-            }
-            .button{
-                font-size: 16px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
@@ -156,12 +32,14 @@
                 aria-controls="offcanvasRight">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end bg-active text-white" tabindex="-1" id="offcanvasRight"
+            <div class="offcanvas offcanvas-start bg-active text-white" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel" id="navbarNav">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                    <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                <div class="offcanvas-header d-flex align-items-center justify-content-between">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">BOOKMARK</h5>
+
+                    <button class="btn--close" data-bs-dismiss="offcanvas" aria-label="">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                 </div>
                 <div class="offcanvas-body">
 
@@ -214,9 +92,7 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
 
-        <script>
-
-        </script>
+        <script src="https://kit.fontawesome.com/3d68344ae4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
