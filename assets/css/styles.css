@@ -6,7 +6,9 @@
 body {
     font-family: 'Rubik', sans-serif !important;
 }
-
+.navbar{
+    background-color: #fff!important;
+}
 .navbar-toggler {
     border: none;
 }
@@ -95,22 +97,59 @@ body {
 .btn-fox:hover {
     background-color: white;
 }
-.offcanvas-header{
-    display: none!important;
+
+.offcanvas-header {
+    display: none !important;
 }
-.btn--close{
-    
+
+.btn--close {
+
     outline: none;
     border: none;
-    font-size: 28px!important;
-    background-color: transparent!important;
+    font-size: 28px !important;
+    background-color: transparent !important;
     color: #fff;
 }
 
+.main {
+    font-size: 18px !important;
+}
+
+.main p {
+    text-align: center;
+    color: #434343;
+}
+.tabs li a{
+    cursor: pointer;
+    color: #434343!important;
+}
+.tabs .nav-link{
+    position: relative !important;
+}
+.selected::after {
+    position: absolute !important;
+    content: " ";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 2px solid var(--Soft-Red);
+}
+.tabs{
+    flex-direction: row !important;;
+}
 @media only screen and (max-width: 990px) {
-    .offcanvas-header{
-        display: flex!important;
+    .main p {
+        width: 100% !important;
     }
+    .tabs{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;;
+    }
+    .offcanvas-header {
+        display: flex !important;
+    }
+
     .offcanvas-body .nav-item {
         width: 100% !important;
         border-top: 1px solid #fff;
