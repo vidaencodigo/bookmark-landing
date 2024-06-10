@@ -137,7 +137,47 @@ body {
 .tabs{
     flex-direction: row !important;;
 }
+.illustration-feature{
+    position: relative;
+    
+}
+
+.figures{ 
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: var(--Soft-Blue);
+    left: -35px;
+    border-radius: 0 0 30% 0;
+    bottom: -50px;
+    z-index: -999;
+}
+.simple--text {
+    width: 50%!important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.simple--text .button{
+    width: 50%;
+}
+.feature-n{
+    width: 100%!important;
+}
 @media only screen and (max-width: 990px) {
+    .simple--text .button{
+        width: 100%;
+    }
+    .figures{ 
+        
+        left: -15px;
+        
+        bottom: -40px;
+      
+    }
+    .simple--text{
+        width: 100% !important;
+    }
     .main p {
         width: 100% !important;
     }

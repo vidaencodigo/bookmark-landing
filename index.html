@@ -98,19 +98,95 @@
                 </p>
 
                 <ul class="nav tabs justify-content-around w-100 mt-3">
-                    <li class="nav-item">
-                        <a class="nav-link selected" aria-current="page" id="simple"> Simple Bookmarking</a>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link selected active" aria-current="page" id="simple" data-bs-toggle="tab"
+                            data-bs-target="#nav-simple" type="button" role="tab" aria-controls="nav-tab-simple"
+                            aria-selected="true"> Simple Bookmarking</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="speedy">Speedy Searching</a>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="speedy" data-bs-toggle="tab" data-bs-target="#nav-speedy" type="button"
+                            role="tab" aria-controls="nav-tab-speedy" aria-selected="false">Speedy Searching</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="easy"> Easy Sharing </a>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="easy" data-bs-toggle="tab" data-bs-target="#nav-easy" type="button"
+                            role="tab" aria-controls="nav-tab-easy" aria-selected="true"> Easy Sharing </a>
                     </li>
 
                 </ul>
             </section>
         </div>
+        <div class="container mt-5">
+            <section class="info">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-simple" role="tabpanel"
+                        aria-labelledby="nav-simple-tab" tabindex="0">
+
+                        <section
+                            class="simple--bookmark  d-flex gap-5 align-items-center flex-md-row-reverse flex-column-reverse justify-content-md-around">
+                            <div class="simple--text">
+                                <h3>Bookmark in one click</h3>
+                                <p>
+                                    Organize your bookmarks however you like. Our simple drag-and-drop interface
+                                    gives you complete control over how you manage your favourite sites.
+                                </p>
+                                <button class="button btn-chrome shadow" type="button">More Info</button>
+                            </div>
+                            <div class="illustration-feature">
+                                <img src="./images/illustration-features-tab-1.svg" alt="illustration-feature"
+                                    class="img-fluid">
+                                <div class="figures">&nbsp;</div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="nav-speedy" role="tabpanel" aria-labelledby="nav-speedy-tab"
+                        tabindex="0">
+                        <section
+                            class="simple--bookmark  d-flex gap-5 align-items-center flex-md-row-reverse flex-column-reverse justify-content-md-around">
+                            <div class="simple--text">
+                                <h3>Intelligent search</h3>
+                                <p>
+                                    Our powerful search feature will help you find saved sites in no time at all.
+                                    No need to trawl through all of your bookmarks.
+                                </p>
+                                <button class="button btn-chrome shadow" type="button">More Info</button>
+                            </div>
+                            <div class="illustration-feature">
+                                <img src="./images/illustration-features-tab-2.svg" alt="illustration-feature"
+                                    class="img-fluid feature-n">
+                                
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="nav-easy" role="tabpanel" aria-labelledby="nav-easy-tab"
+                        tabindex="0">
+                        <section
+                            class="simple--bookmark  d-flex gap-5 align-items-center flex-md-row-reverse flex-column-reverse justify-content-md-between">
+                            <div class="simple--text">
+                                <h3> Share your bookmarks</h3>
+                                <p>
+                                    Easily share your bookmarks and collections with others. Create a shareable
+                                    link that you can send at the click of a button.
+                                </p>
+                                <button class="button btn-chrome shadow" type="button">More Info</button>
+                            </div>
+                            <div class="illustration-feature">
+                                <img src="./images/illustration-features-tab-3.svg" alt="illustration-feature"
+                                    class="img-fluid">
+                                
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <footer class="mt-5">
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="#">Your Name Here</a>.
+            </p>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
