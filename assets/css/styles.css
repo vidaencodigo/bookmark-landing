@@ -7,9 +7,11 @@ body {
     font-family: 'Rubik', sans-serif !important;
     font-size: 18px;
 }
-.navbar{
-    background-color: #fff!important;
+
+.navbar {
+    background-color: #fff !important;
 }
+
 .navbar-toggler {
     border: none;
 }
@@ -120,13 +122,16 @@ body {
     text-align: center;
     color: #434343;
 }
-.tabs li a{
+
+.tabs li a {
     cursor: pointer;
-    color: #434343!important;
+    color: #434343 !important;
 }
-.tabs .nav-link{
+
+.tabs .nav-link {
     position: relative !important;
 }
+
 .tabs .selected::after {
     position: absolute !important;
     content: " ";
@@ -135,15 +140,18 @@ body {
     width: 100%;
     border: 2px solid var(--Soft-Red);
 }
-.tabs{
-    flex-direction: row !important;;
-}
-.illustration-feature{
-    position: relative;
-    
+
+.tabs {
+    flex-direction: row !important;
+    ;
 }
 
-.figures{ 
+.illustration-feature {
+    position: relative;
+
+}
+
+.figures {
     position: absolute;
     width: 80%;
     height: 80%;
@@ -153,45 +161,58 @@ body {
     bottom: -50px;
     z-index: -999;
 }
+
 .simple--text {
-    width: 50%!important;
+    width: 50% !important;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.simple--text .button{
+
+.simple--text .button {
     width: 50%;
 }
-.feature-n{
-    width: 100%!important;
+
+.feature-n {
+    width: 100% !important;
 }
 
-.image--card{
+.image--card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.card--img{
-    width: 50%!important;
+
+.card--img {
+    width: 50% !important;
 }
-.cards-brand > div:nth-child(2){
-    margin-top: 100px!important;
+
+.cards-brand>div:nth-child(2) {
+    margin-top: 100px !important;
 }
-.cards-brand > div:nth-child(3){
-    margin-top: 200px!important;
+
+.cards-brand>div:nth-child(3) {
+    margin-top: 200px !important;
 }
-.actions{
+
+.actions {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .card {
     border: none !important;
 }
-.social-media{
+
+.social-media {
     display: none !important;
+}
+
+.accordion-button {
+    outline: none !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -199,53 +220,71 @@ body {
     font-weight: 400;
     font-size: 18px;
     background-color: white !important;
-    box-shadow: none!important;
+    box-shadow: none !important;
 }
 
-.accordion-button:hover{
+.accordion-button:hover {
     color: var(--Soft-Red);
 }
 
 .accordion-button::after {
-    background-image: url("../../images/icon-arrow.svg")!important;
+    background-image: url("../../images/icon-arrow.svg") !important;
 }
-.accordion-button:not(.collapsed)::after{
-    background-image: url("../../images/icon.png")!important;
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../../images/icon.png") !important;
 }
+
+.accordion-item {
+    border: none !important;
+    border-top: 1px solid #dee2e6 !important;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
 @media only screen and (max-width: 990px) {
-    .social-media{
+    .social-media {
         display: flex !important;
     }
-    .cards-brand > div:nth-child(2){
-        margin-top: 0!important;
+
+    .cards-brand>div:nth-child(2) {
+        margin-top: 0 !important;
     }
-    .cards-brand > div:nth-child(3){
-        margin-top: 0!important;
+
+    .cards-brand>div:nth-child(3) {
+        margin-top: 0 !important;
     }
-    .section-1{
-        width: 100%!important;
-    }
-    .simple--text .button{
-        width: 100%;
-    }
-    .figures{ 
-        
-        left: -15px;
-        
-        bottom: -40px;
-      
-    }
-    .simple--text{
+
+    .section-1 {
         width: 100% !important;
     }
+
+    .simple--text .button {
+        width: 100%;
+    }
+
+    .figures {
+
+        left: -15px;
+
+        bottom: -40px;
+
+    }
+
+    .simple--text {
+        width: 100% !important;
+    }
+
     .main p {
         width: 100% !important;
     }
-    .tabs{
+
+    .tabs {
         flex-direction: column !important;
         justify-content: center !important;
-        align-items: center !important;;
+        align-items: center !important;
+        ;
     }
+
     .offcanvas-header {
         display: flex !important;
     }
