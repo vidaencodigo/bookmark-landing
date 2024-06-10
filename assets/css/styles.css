@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Rubik', sans-serif !important;
+    font-size: 18px;
 }
 .navbar{
     background-color: #fff!important;
@@ -126,7 +127,7 @@ body {
 .tabs .nav-link{
     position: relative !important;
 }
-.selected::after {
+.tabs .selected::after {
     position: absolute !important;
     content: " ";
     left: 0;
@@ -164,7 +165,66 @@ body {
 .feature-n{
     width: 100%!important;
 }
+
+.image--card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card--img{
+    width: 50%!important;
+}
+.cards-brand > div:nth-child(2){
+    margin-top: 100px!important;
+}
+.cards-brand > div:nth-child(3){
+    margin-top: 200px!important;
+}
+.actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    border: none !important;
+}
+.social-media{
+    display: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #434343 !important;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: white !important;
+    box-shadow: none!important;
+}
+
+.accordion-button:hover{
+    color: var(--Soft-Red);
+}
+
+.accordion-button::after {
+    background-image: url("../../images/icon-arrow.svg")!important;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("../../images/icon.png")!important;
+}
 @media only screen and (max-width: 990px) {
+    .social-media{
+        display: flex !important;
+    }
+    .cards-brand > div:nth-child(2){
+        margin-top: 0!important;
+    }
+    .cards-brand > div:nth-child(3){
+        margin-top: 0!important;
+    }
+    .section-1{
+        width: 100%!important;
+    }
     .simple--text .button{
         width: 100%;
     }
